@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.NET Framework 3.5 SP1 Offline Installer - Standalone Download for Windows 10/11, Server 2016-2025 | DISM</title>
+    <meta name="description" content="Download .NET Framework 3.5 SP1 standalone offline installer for Windows 10, 11, Server 2016-2025. No internet required — fix error 0x800f081f, 0x8024402C. Deploy NET 3.5 via DISM or one-click installer for enterprise servers and workstations.">
+    <meta name="keywords" content=".NET Framework 3.5 SP1 offline installer, install .NET Framework 3.5 on Windows 10, install .NET Framework 3.5 on Windows 11, Windows Server .NET Framework 3.5 offline, dotnet 3.5 SP1 standalone, DISM Enable-Feature NetFx3, 0x800f081f .NET 3.5, 0x8024402C .NET Framework, dotnetfx35 offline, enable NetFX3 without internet, .NET 3.5 deployment, .NET Framework 3.5 error 0x800F0950, Windows 11 26H1 .NET 3.5 standalone">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://net3dot5.com/">
+    <link rel="alternate" hreflang="en" href="https://net3dot5.com/">
+    <link rel="alternate" hreflang="zh" href="https://net3dot5.com/">
+    <link rel="alternate" hreflang="x-default" href="https://net3dot5.com/">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230078d4'/%3E%3Ctext x='16' y='22' font-size='18' font-weight='800' text-anchor='middle' fill='%23fff' font-family='Segoe UI,sans-serif'%3E.N%3C/text%3E%3C/svg%3E">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content=".NET Framework 3.5 SP1 Offline Installer">
+    <meta property="og:description" content="Download .NET Framework 3.5 SP1 offline installer. Supports Windows 10, 11, Server 2016-2025. Standalone, no internet required.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://net3dot5.com/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="net3dot5">
+    <meta property="og:image" content="https://net3dot5.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="article:published_time" content="2026-05-21T18:14:00+00:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=".NET Framework 3.5 SP1 Offline Installer">
+    <meta name="twitter:description" content="Download .NET Framework 3.5 SP1 offline installer for Windows 10, 11, Server 2016-2025. Standalone, no internet required.">
+    <meta name="twitter:image" content="https://net3dot5.com/og-image.png">
+
+    <!-- Schema.org: SoftwareApplication + FAQPage -->
+    <script type="application/ld+json">
+    [{
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": ".NET Framework 3.5 SP1 Offline Installer",
+        "operatingSystem": "Windows 10, Windows 11, Windows Server 2016, Windows Server 2019, Windows Server 2022, Windows Server 2025",
+        "applicationCategory": "UtilityApplication",
+        "description": "Offline installer for .NET Framework 3.5 SP1. No internet connection required.",
+        "version": "3.5 SP1",
+        "datePublished": "2026-05-21",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "IT Professional, System Administrator"
+        }
+    },
+    {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is .NET Framework 3.5 SP1?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": ".NET Framework 3.5 SP1 is a Microsoft framework required by many legacy enterprise applications. It includes .NET 2.0 and 3.0 and is supported on Windows until January 2029."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why do I need an offline installer for .NET Framework 3.5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Many enterprise servers and secure workstations are disconnected from the internet. The offline installer allows you to deploy .NET 3.5 across multiple machines without requiring internet access."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does this work on Windows 11?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, this offline installer works on Windows 11, Windows 10, Windows Server 2016, Windows Server 2019, Windows Server 2022, and Windows Server 2025."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I install .NET Framework 3.5 offline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simply download dotnet-installer-win64.exe, right-click and select 'Run as administrator', then wait for the installation to complete. No command line needed."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is .NET Framework 3.5 still supported by Microsoft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, .NET Framework 3.5 SP1 is supported by Microsoft until January 9, 2029. It is included as a Windows component on supported Windows versions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this compatible with Windows 11 26H1 standalone .NET 3.5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Starting with Windows 11 26H1 (build 28000), .NET Framework 3.5 is a standalone installer. This page's offline installer is compatible."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How to fix .NET Framework 3.5 error 0x800f081f?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Error 0x800f081f means source files are not found. Use matching Windows media for DISM, or use our offline installer which bundles the correct files."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I deploy .NET Framework 3.5 with DISM offline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Use DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\\sources\\sxs with matching Windows installation media. The /LimitAccess flag bypasses WSUS."
+                }
+            }
+        ]
+    }]
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .lang-bar {
+            background: #0078d4;
+            text-align: right;
+            padding: 0.5rem 2rem;
+        }
+        .lang-bar button {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 3px 14px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-family: inherit;
+            margin-left: 6px;
+        }
+        .lang-bar button.active {
+            background: rgba(255,255,255,0.2);
+            border-color: #fff;
+        }
+        .lang-bar button:hover { background: rgba(255,255,255,0.15); }
+
+        .header-bar {
+            background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%);
+            color: #fff;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        .header-bar h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .header-bar p {
+            font-size: 1rem;
+            opacity: 0.85;
+            margin-top: 0.4rem;
+        }
+        .header-bar .meta-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        .container { max-width: 960px; margin: 0 auto; padding: 2rem; }
+
+        .platform-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin: 1.5rem 0 2.5rem;
+        }
+        .platform-chip {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 6px 16px 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #444;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        .platform-chip svg { width: 16px; height: 16px; fill: #0078d4; }
+
+        .download-card {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+        .download-card .card-header {
+            background: #f0f6fc;
+            border-bottom: 1px solid #e0e8f0;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .download-card .card-header .left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .download-card .card-header .left .icon {
+            width: 40px; height: 40px;
+            background: linear-gradient(135deg, #0078d4, #68217a);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 16px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .download-card .card-header .left h2 { font-size: 1.05rem; font-weight: 600; color: #222; }
+        .download-card .card-header .left .desc { font-size: 0.8rem; color: #666; }
+        .download-card .card-body { padding: 1.5rem; }
+        .download-card .card-body .file-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #555;
+            padding: 0.6rem 0.8rem;
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            margin-bottom: 1.2rem;
+        }
+        .download-card .card-body .file-info strong { color: #333; }
+        .download-card .card-body .file-info .sep { color: #ddd; margin: 0 6px; }
+
+        .btn-download {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            background: #0078d4;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.15s;
+        }
+        .btn-download:hover { background: #005a9e; }
+        .btn-download:active { background: #004578; }
+        .btn-download svg { width: 22px; height: 22px; fill: currentColor; }
+
+        .card-footer {
+            margin-top: 0.8rem;
+            font-size: 0.8rem;
+            color: #888;
+        }
+        .card-footer .sep { color: #ddd; margin: 0 6px; }
+
+        .trust-badges {
+            margin-top: 0.6rem;
+            font-size: 0.75rem;
+            color: #28a745;
+            font-weight: 600;
+        }
+        .trust-badges .sep { color: #ccc; margin: 0 0.4rem; }
+
+        .file-hash {
+            margin-top: 0.4rem;
+            font-size: 0.7rem;
+            color: #999;
+            word-break: break-all;
+        }
+        .file-hash code {
+            font-size: 0.65rem;
+            background: #f5f5f5;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+            color: #666;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature-item {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+        }
+        .feature-item .f-icon {
+            width: 36px; height: 36px;
+            background: rgba(0,120,212,0.08);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .feature-item .f-icon svg { width: 18px; height: 18px; fill: #0078d4; }
+        .feature-item .f-text h4 { font-size: 0.9rem; font-weight: 600; color: #222; margin-bottom: 2px; }
+        .feature-item .f-text p { font-size: 0.82rem; line-height: 1.5; color: #666; }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .info-card {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+        }
+        .info-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .info-card h3 svg { width: 20px; height: 20px; fill: #0078d4; }
+        .info-card p, .info-card li { font-size: 0.88rem; line-height: 1.7; color: #555; }
+        .info-card ol { padding-left: 1.2rem; }
+        .info-card code {
+            background: #f0f0f0;
+            padding: 1px 5px;
+            border-radius: 3px;
+            font-size: 0.82rem;
+            color: #c7254e;
+        }
+
+        .faq-section { margin: 2.5rem 0; }
+        .faq-section h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #222;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .faq-item {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            margin-bottom: 0.6rem;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 1rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #222;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-family: inherit;
+        }
+        .faq-question:hover { background: #fafafa; }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: #0078d4;
+            font-weight: 700;
+            transition: transform 0.2s;
+        }
+        .faq-item.open .faq-question::after { content: '\2212'; }
+        .faq-answer { display: none; padding: 0 1.2rem 1rem; font-size: 0.85rem; line-height: 1.7; color: #555; }
+        .faq-item.open .faq-answer { display: block; }
+
+        .disclaimer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            line-height: 1.6;
+            margin: 2rem 0 0;
+            padding: 1rem;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #e8e8e8;
+            margin-top: 1rem;
+        }
+
+        [data-lang="zh"] { display: none; }
+        .lang-zh [data-lang="zh"] { display: revert; }
+        .lang-zh [data-lang="en"] { display: none; }
+
+        @media (max-width: 600px) {
+            .header-bar h1 { font-size: 1.6rem; }
+            .features-grid, .info-grid { grid-template-columns: 1fr; }
+            .download-card .card-header { flex-direction: column; align-items: stretch; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+
+<div class="lang-bar">
+    <button class="active" onclick="switchLang('en')" id="btn-en">English</button>
+    <button onclick="switchLang('zh')" id="btn-zh">中文</button>
+</div>
+
+<div class="header-bar">
+    <h1>.NET Framework 3.5 SP1 Offline Installer</h1>
+    <p><span data-lang="en">Standalone Offline Installer for Windows 10 / 11 / Server 2016 / 2019 / 2022 / 2025</span><span data-lang="zh">离线安装包 · 适用于 Windows 10 / 11 / Server 2016 / 2019 / 2022 / 2025</span></p>
+    <span class="meta-badge">Standalone Offline Installer</span>
+</div>
+
+<div class="container">
+
+    <div class="platform-row">
+        <span class="platform-chip"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/></svg>Windows 10</span>
+        <span class="platform-chip"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/></svg>Windows 11</span>
+        <span class="platform-chip"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/></svg>Server 2016</span>
+        <span class="platform-chip"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/></svg>Server 2019</span>
+        <span class="platform-chip"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/></svg>Server 2022</span>
+        <span class="platform-chip"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/></svg>Server 2025</span>
+        <span class="platform-chip"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M2 2h8v8H2zM14 2h8v8h-8zM2 14h8v8H2zM14 14h8v8h-8z"/></svg><span data-lang="en">Offline Install</span><span data-lang="zh">离线安装</span></span>
+    </div>
+
+    <div class="download-card">
+        <div class="card-header">
+            <div class="left">
+                <div class="icon">.N</div>
+                <div>
+                    <h2>.NET Framework 3.5 SP1</h2>
+                    <div class="desc" data-lang="en">Right-click and run as administrator to install</div>
+                    <div class="desc" data-lang="zh">下载后右键以管理员身份运行即可安装</div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="file-info">
+                <span>&#128230; <strong>dotnet-installer-win64.zip</strong></span>
+                <span><span data-lang="en">Type:</span><span data-lang="zh">类型：</span> <strong><span data-lang="en">Compressed</span><span data-lang="zh">压缩包</span></strong> <span class="sep">|</span> <strong>~417 MB</strong></span>
+            </div>
+            <a class="btn-download" href="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy8xZTMwMGMwNDE4NGI1MDlkL0lRQTBwMGg3dE5BOFRZM1JhcnU2MkFrR0FiWTd5dnF6Y0M2aHB6UWJHUkdFQ2JVP2U9Rlh5bTFl.zip">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                <span data-lang="en">Download Offline Installer</span><span data-lang="zh">下载离线安装包</span>
+            </a>
+            <div class="trust-badges">
+                <span data-lang="en">Free · No bundles · No toolbars</span>
+                <span data-lang="zh">免费 · 无捆绑 · 无工具栏</span>
+            </div>
+            <div class="card-footer">
+                <span>v3.5 SP1</span>
+                <span class="sep">·</span>
+                <span><span data-lang="en">Released:</span><span data-lang="zh">发布：</span> 2026-05-21</span>
+                <span class="sep">·</span>
+                <span>Freeware</span>
+            </div>
+            <div class="file-hash">
+                <span data-lang="en">SHA-256: <code>B6C0EFED5CB4C5154F1BB859050106B37E06D65DF50C37D938861F1E307B5FEA</code></span>
+                <span data-lang="zh">SHA-256: <code>B6C0EFED5CB4C5154F1BB859050106B37E06D65DF50C37D938861F1E307B5FEA</code></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-item">
+            <div class="f-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z"/></svg></div>
+            <div class="f-text">
+                <h4 data-lang="en">Fully Offline</h4>
+                <h4 data-lang="zh">完全离线</h4>
+                <p data-lang="en">No internet connection required. Install on servers, offline workstations, and WSUS-managed enterprise environments. Bypass error 0x8024402C.</p>
+                <p data-lang="zh">无需联网，适用于服务器、离线工作站和 WSUS 管理环境，解决 0x8024402C 错误。</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="f-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 16l-4-4 1.5-1.5L9 13l8.5-8.5L19 6z"/></svg></div>
+            <div class="f-text">
+                <h4 data-lang="en">One-Click Install</h4>
+                <h4 data-lang="zh">一键安装</h4>
+                <p data-lang="en">One-click GUI installer — no command line, no DISM /Online /Enable-Feature /FeatureName:NetFx3, no ISO mounting required. Just run as administrator.</p>
+                <p data-lang="zh">一键 GUI 安装程序 — 无需命令行、无需 DISM、无需挂载 ISO，右键管理员运行即可。</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="f-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div>
+            <div class="f-text">
+                <h4 data-lang="en">All Windows Versions</h4>
+                <h4 data-lang="zh">全版本支持</h4>
+                <p data-lang="en">Compatible with Windows 10, 11, Server 2016, 2019, 2022, and 2025.</p>
+                <p data-lang="zh">兼容 Windows 10、11、Server 2016、2019、2022 和 2025。</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="f-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/></svg></div>
+            <div class="f-text">
+                <h4 data-lang="en">Deploy at Scale</h4>
+                <h4 data-lang="zh">批量部署</h4>
+                <p data-lang="en">Perfect for SCCM, MDT, and Group Policy deployment. Deploy .NET 3.5 across hundreds of enterprise machines via managed software distribution.</p>
+                <p data-lang="zh">适用于 SCCM、MDT 和组策略批量部署。在企业环境中跨数百台机器统一部署 .NET 3.5。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16"/></svg><span data-lang="en">Supported Platforms</span><span data-lang="zh">支持的平台</span></h3>
+            <p data-lang="en">
+                Windows 10 (all versions)<br>
+                Windows 11 (all versions)<br>
+                Windows Server 2016<br>
+                Windows Server 2019<br>
+                Windows Server 2022<br>
+                Windows Server 2025
+            </p>
+            <p data-lang="zh">
+                Windows 10（所有版本）<br>
+                Windows 11（所有版本）<br>
+                Windows Server 2016<br>
+                Windows Server 2019<br>
+                Windows Server 2022<br>
+                Windows Server 2025
+            </p>
+        </div>
+        <div class="info-card">
+            <h3><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 16H2V4a2 2 0 012-2h12v2H4v12zm18-6v10a2 2 0 01-2 2H8a2 2 0 01-2-2V10a2 2 0 012-2h12a2 2 0 012 2zm-2 0H8v10h12V10z"/></svg><span data-lang="en">Installation</span><span data-lang="zh">安装方法</span></h3>
+            <ol data-lang="en">
+                <li>Download <strong>dotnet-installer-win64.exe</strong></li>
+                <li>Right-click → <strong>Run as administrator</strong></li>
+                <li>Wait for completion, restart if prompted</li>
+            </ol>
+            <ol data-lang="zh">
+                <li>下载 <strong>dotnet-installer-win64.exe</strong></li>
+                <li>右键 → <strong>以管理员身份运行</strong></li>
+                <li>等待安装完成，按提示重启</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3><span data-lang="en">DISM Deployment</span><span data-lang="zh">DISM 部署</span></h3>
+            <p data-lang="en">For IT admins deploying via SCCM, MDT, or Group Policy, use DISM with Windows installation media:</p>
+            <ol data-lang="en">
+                <li>Mount Windows ISO or insert installation media</li>
+                <li>Open Command Prompt as Administrator</li>
+                <li>Run: <code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\sources\sxs</code></li>
+                <li>Reboot if prompted</li>
+            </ol>
+            <p data-lang="en">For WSUS environments, error <strong>0x8024402C</strong> appears when Windows Update is blocked. Use <code>/LimitAccess</code> flag to bypass WSUS and install from local source.</p>
+            <p data-lang="zh">对于通过 SCCM、MDT 或组策略部署的 IT 管理员，使用 DISM 配合 Windows 安装介质：</p>
+            <ol data-lang="zh">
+                <li>挂载 Windows ISO 或插入安装介质</li>
+                <li>以管理员身份打开命令提示符</li>
+                <li>运行：<code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\sources\sxs</code></li>
+                <li>按提示重启</li>
+            </ol>
+            <p data-lang="zh">在 WSUS 环境中，Windows Update 被阻止时会报错 <strong>0x8024402C</strong>。使用 <code>/LimitAccess</code> 参数可绕过 WSUS 从本地源安装。</p>
+        </div>
+        <div class="info-card">
+            <h3><span data-lang="en">Common Error Codes</span><span data-lang="zh">常见错误代码</span></h3>
+            <p data-lang="en"><strong>0x800f081f</strong> — Source files not found. Use matching Windows media or our offline installer.<br>
+            <strong>0x8024402C</strong> — WSUS/WU blocked. Add <code>/LimitAccess</code> to DISM command.<br>
+            <strong>0x800F0950</strong> — CBS corruption. Run <code>sfc /scannow</code> then retry.<br>
+            <strong>0x80070422</strong> — Windows Update service disabled. Enable it or use offline source.<br>
+            <strong>0x800F0922</strong> — DISM failed. Check CBS log or use our standalone installer.<br>
+            <strong>0x80070005</strong> — Access denied. Run installer as Administrator or check group policy.</p>
+            <p data-lang="zh"><strong>0x800f081f</strong> — 找不到源文件。使用匹配的 Windows 介质或我们的离线安装程序。<br>
+            <strong>0x8024402C</strong> — WSUS/WU 被阻止。在 DISM 命令中添加 <code>/LimitAccess</code>。<br>
+            <strong>0x800F0950</strong> — CBS 损坏。运行 <code>sfc /scannow</code> 后重试。<br>
+            <strong>0x80070422</strong> — Windows Update 服务已禁用。启用服务或使用离线源。<br>
+            <strong>0x800F0922</strong> — DISM 失败。检查 CBS 日志或使用我们的独立安装程序。<br>
+            <strong>0x80070005</strong> — 访问被拒绝。以管理员身份运行安装程序或检查组策略。</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2 data-lang="en">Frequently Asked Questions</h2>
+        <h2 data-lang="zh">常见问题</h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                <span data-lang="en">What is .NET Framework 3.5 SP1?</span>
+                <span data-lang="zh">什么是 .NET Framework 3.5 SP1？</span>
+            </button>
+            <div class="faq-answer">
+                <span data-lang="en">.NET Framework 3.5 SP1 is a Microsoft framework required by many legacy enterprise applications. It includes .NET 2.0 and 3.0 runtime components. It is supported by Microsoft until January 2029.</span>
+                <span data-lang="zh">.NET Framework 3.5 SP1 是微软框架，许多旧版企业应用程序都需要它。它包含 .NET 2.0 和 3.0 运行库。微软支持此版本至 2029 年 1 月。</span>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                <span data-lang="en">Why do I need an offline installer?</span>
+                <span data-lang="zh">为什么需要离线安装包？</span>
+            </button>
+            <div class="faq-answer">
+                <span data-lang="en">Many enterprise servers and secure workstations are disconnected from the internet for security reasons. The offline installer allows you to deploy .NET 3.5 across multiple machines without requiring internet access.</span>
+                <span data-lang="zh">出于安全原因，许多企业服务器和安全工作站无法连接互联网。离线安装包允许您在多台机器上部署 .NET 3.5，无需联网。</span>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                <span data-lang="en">Does this work on Windows 11?</span>
+                <span data-lang="zh">是否支持 Windows 11？</span>
+            </button>
+            <div class="faq-answer">
+                <span data-lang="en">Yes, this offline installer works on Windows 11, Windows 10, Windows Server 2016, 2019, 2022, and 2025.</span>
+                <span data-lang="zh">是的，此离线安装包支持 Windows 11、Windows 10、Windows Server 2016、2019、2022 和 2025。</span>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                <span data-lang="en">How do I install .NET 3.5 offline?</span>
+                <span data-lang="zh">如何离线安装 .NET 3.5？</span>
+            </button>
+            <div class="faq-answer">
+                <span data-lang="en">Simply download dotnet-installer-win64.exe, right-click and select "Run as administrator", then wait for the installation to complete. No command line or DISM knowledge needed.</span>
+                <span data-lang="zh">只需下载 dotnet-installer-win64.exe，右键以管理员身份运行，等待安装完成即可。无需命令行或 DISM 知识。</span>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                <span data-lang="en">Is .NET Framework 3.5 still supported by Microsoft?</span>
+                <span data-lang="zh">微软还在支持 .NET Framework 3.5 吗？</span>
+            </button>
+            <div class="faq-answer">
+                <span data-lang="en">Yes, .NET Framework 3.5 SP1 is supported by Microsoft until January 9, 2029 as part of the Windows operating system component.</span>
+                <span data-lang="zh">是的，.NET Framework 3.5 SP1 作为 Windows 操作系统组件，微软支持至 2029 年 1 月 9 日。</span>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                <span data-lang="en">Is this compatible with Windows 11 26H1 and the new standalone .NET 3.5?</span>
+                <span data-lang="zh">是否兼容 Windows 11 26H1 的新版独立 .NET 3.5 安装方式？</span>
+            </button>
+            <div class="faq-answer">
+                <span data-lang="en">Starting with Windows 11 26H1 (build 28000), Microsoft moved .NET Framework 3.5 to a standalone installer. This page's offline installer is compatible. If you need the official Microsoft standalone package for 26H1+, download from <a href="https://go.microsoft.com/fwlink/?LinkID=2337635" target="_blank" rel="noopener">Microsoft's official link</a>.</span>
+                <span data-lang="zh">从 Windows 11 26H1（build 28000）开始，微软将 .NET Framework 3.5 改为独立安装包。本页的离线安装程序兼容。如果你需要 26H1+ 的官方独立包，请从<a href="https://go.microsoft.com/fwlink/?LinkID=2337635" target="_blank" rel="noopener">微软官方链接</a>下载。</span>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                <span data-lang="en">How to fix .NET Framework 3.5 error 0x800f081f or 0x800F0950?</span>
+                <span data-lang="zh">如何修复 .NET Framework 3.5 错误 0x800f081f 或 0x800F0950？</span>
+            </button>
+            <div class="faq-answer">
+                <span data-lang="en">These errors occur when Windows cannot find the source files. The DISM command <code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\sources\sxs</code> requires matching Windows media. Our offline installer avoids this entirely by bundling the correct files — no ISO mounting, no source path needed.</span>
+                <span data-lang="zh">这些错误通常因 Windows 找不到源文件导致。DISM 命令 <code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\sources\sxs</code> 需要匹配的 Windows 安装介质。我们的离线安装包直接打包了正确的文件，无需挂载 ISO，无需配置源路径。</span>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                <span data-lang="en">Can I use this with DISM for unattended deployment?</span>
+                <span data-lang="zh">可以配合 DISM 进行无人值守部署吗？</span>
+            </button>
+            <div class="faq-answer">
+                <span data-lang="en">Yes. For silent deployment via SCCM, MDT, or Group Policy, you can use the DISM command: <code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:C:\path\to\sxs</code>. Our installer provides an alternative GUI method — just run as administrator with no command line needed.</span>
+                <span data-lang="zh">可以。通过 SCCM、MDT 或组策略无人值守部署时，可使用 DISM 命令：<code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:C:\path\to\sxs</code>。我们的安装程序提供了替代 GUI 方式，只需以管理员身份运行，无需命令。</span>
+            </div>
+        </div>
+    </div>
+
+    <p class="disclaimer">
+        <span data-lang="en"><strong>Note:</strong> .NET Framework 3.5 is a Windows component. This installer packages the official Microsoft component for convenient offline deployment. No modifications have been made to the original Microsoft files.</span>
+        <span data-lang="zh"><strong>说明：</strong>.NET Framework 3.5 是 Windows 组件。本安装程序打包了官方微软组件，方便离线部署，未对原始微软文件进行任何修改。</span>
+    </p>
+
+</div>
+
+<div class="footer">
+    <span data-lang="en">Microsoft .NET Framework is a trademark of Microsoft Corporation. This page provides offline installer downloads.</span>
+    <span data-lang="zh">Microsoft .NET Framework 是 Microsoft Corporation 的商标。本页面仅提供离线安装包下载。</span>
+</div>
+
+</main>
+
+<script>
+(function() {
+    var saved = localStorage.getItem('lang');
+    if (saved === 'zh') switchLang('zh');
+})();
+function switchLang(lang) {
+    document.body.className = lang === 'zh' ? 'lang-zh' : '';
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+    document.documentElement.lang = lang;
+    localStorage.setItem('lang', lang);
+}
+</script>
+
+</body>
+</html>
