@@ -26,6 +26,9 @@ jobs:
       - name: Install link checker
         run: npm install -g broken-link-checker
 
+      - name: Install XML validator
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
       - name: Validate HTML
         run: |
           htmlhint *.html || true
