@@ -24,11 +24,52 @@
         p { font-size: 1rem; color: #666; margin: 1rem 0 2rem; }
         a { color: #0078d4; text-decoration: none; font-weight: 600; }
         a:hover { text-decoration: underline; }
+        .lang-bar {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        .lang-bar button {
+            background: none;
+            border: 1px solid rgba(0,120,212,0.3);
+            color: #0078d4;
+            padding: 4px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-family: inherit;
+            margin-left: 6px;
+        }
+        .lang-bar button.active {
+            background: #0078d4;
+            color: #fff;
+        }
+        .lang-bar button:hover { opacity: 0.8; }
+        [data-lang] { display: none; }
+        html[lang="en"] [data-lang="en"] { display: block; }
+        html[lang="zh"] [data-lang="zh"] { display: block; }
     </style>
 </head>
 <body>
+    <div class="lang-bar">
+        <button onclick="setLang('en')" id="btn-en" class="active">English</button>
+        <button onclick="setLang('zh')" id="btn-zh">中文</button>
+    </div>
     <h1>404</h1>
-    <p>Page not found</p>
-    <a href="/">&larr; Back to Home</a>
+    <p data-lang="en">Page not found</p>
+    <p data-lang="zh">页面未找到</p>
+    <a href="/">&larr; <span data-lang="en">Back to Home</span><span data-lang="zh">返回首页</span></a>
+    <script>
+    (function() {
+        var saved = localStorage.getItem('lang');
+        if (saved === 'zh') setLang('zh');
+    })();
+    function setLang(lang) {
+        document.documentElement.lang = lang;
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+        localStorage.setItem('lang', lang);
+    }
+    </script>
 </body>
 </html>
