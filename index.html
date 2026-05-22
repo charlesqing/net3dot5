@@ -400,6 +400,7 @@
             color: #0078d4;
             font-weight: 700;
             transition: transform 0.2s;
+            float: right;
         }
         .faq-item.open .faq-question::after { content: '\2212'; }
         .faq-answer { display: none; padding: 0 1.2rem 1rem; font-size: 0.85rem; line-height: 1.7; color: #555; }
@@ -621,81 +622,81 @@
         <h2 data-lang="zh">常见问题</h2>
 
         <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" onclick="toggleFaq(this)">
                 <span data-lang="en">What is .NET Framework 3.5 SP1?</span>
                 <span data-lang="zh">什么是 .NET Framework 3.5 SP1？</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-answer-1">
                 <span data-lang="en">.NET Framework 3.5 SP1 is a Microsoft framework required by many legacy enterprise applications. It includes .NET 2.0 and 3.0 runtime components. It is supported by Microsoft until January 2029.</span>
                 <span data-lang="zh">.NET Framework 3.5 SP1 是微软框架，许多旧版企业应用程序都需要它。它包含 .NET 2.0 和 3.0 运行库。微软支持此版本至 2029 年 1 月。</span>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" onclick="toggleFaq(this)">
                 <span data-lang="en">Why do I need an offline installer?</span>
                 <span data-lang="zh">为什么需要离线安装包？</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-answer-2">
                 <span data-lang="en">Many enterprise servers and secure workstations are disconnected from the internet for security reasons. The offline installer allows you to deploy .NET 3.5 across multiple machines without requiring internet access.</span>
                 <span data-lang="zh">出于安全原因，许多企业服务器和安全工作站无法连接互联网。离线安装包允许您在多台机器上部署 .NET 3.5，无需联网。</span>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" onclick="toggleFaq(this)">
                 <span data-lang="en">Does this work on Windows 11?</span>
                 <span data-lang="zh">是否支持 Windows 11？</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-answer-3">
                 <span data-lang="en">Yes, this offline installer works on Windows 11, Windows 10, Windows Server 2016, 2019, 2022, and 2025.</span>
                 <span data-lang="zh">是的，此离线安装包支持 Windows 11、Windows 10、Windows Server 2016、2019、2022 和 2025。</span>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" onclick="toggleFaq(this)">
                 <span data-lang="en">How do I install .NET 3.5 offline?</span>
                 <span data-lang="zh">如何离线安装 .NET 3.5？</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-answer-4">
                 <span data-lang="en">Simply download dotnet-installer-win64.exe, right-click and select "Run as administrator", then wait for the installation to complete. No command line or DISM knowledge needed.</span>
                 <span data-lang="zh">只需下载 dotnet-installer-win64.exe，右键以管理员身份运行，等待安装完成即可。无需命令行或 DISM 知识。</span>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" onclick="toggleFaq(this)">
                 <span data-lang="en">Is .NET Framework 3.5 still supported by Microsoft?</span>
                 <span data-lang="zh">微软还在支持 .NET Framework 3.5 吗？</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-answer-5">
                 <span data-lang="en">Yes, .NET Framework 3.5 SP1 is supported by Microsoft until January 9, 2029 as part of the Windows operating system component.</span>
                 <span data-lang="zh">是的，.NET Framework 3.5 SP1 作为 Windows 操作系统组件，微软支持至 2029 年 1 月 9 日。</span>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" onclick="toggleFaq(this)">
                 <span data-lang="en">Is this compatible with Windows 11 26H1 and the new standalone .NET 3.5?</span>
                 <span data-lang="zh">是否兼容 Windows 11 26H1 的新版独立 .NET 3.5 安装方式？</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-answer-6">
                 <span data-lang="en">Starting with Windows 11 26H1 (build 28000), Microsoft moved .NET Framework 3.5 to a standalone installer. This page's offline installer is compatible. If you need the official Microsoft standalone package for 26H1+, download from <a href="https://go.microsoft.com/fwlink/?LinkID=2337635" target="_blank" rel="noopener">Microsoft's official link</a>.</span>
                 <span data-lang="zh">从 Windows 11 26H1（build 28000）开始，微软将 .NET Framework 3.5 改为独立安装包。本页的离线安装程序兼容。如果你需要 26H1+ 的官方独立包，请从<a href="https://go.microsoft.com/fwlink/?LinkID=2337635" target="_blank" rel="noopener">微软官方链接</a>下载。</span>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7" onclick="toggleFaq(this)">
                 <span data-lang="en">How to fix .NET Framework 3.5 error 0x800f081f or 0x800F0950?</span>
                 <span data-lang="zh">如何修复 .NET Framework 3.5 错误 0x800f081f 或 0x800F0950？</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-answer-7">
                 <span data-lang="en">These errors occur when Windows cannot find the source files. The DISM command <code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\sources\sxs</code> requires matching Windows media. Our offline installer avoids this entirely by bundling the correct files — no ISO mounting, no source path needed.</span>
                 <span data-lang="zh">这些错误通常因 Windows 找不到源文件导致。DISM 命令 <code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\sources\sxs</code> 需要匹配的 Windows 安装介质。我们的离线安装包直接打包了正确的文件，无需挂载 ISO，无需配置源路径。</span>
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8" onclick="toggleFaq(this)">
                 <span data-lang="en">Can I use this with DISM for unattended deployment?</span>
                 <span data-lang="zh">可以配合 DISM 进行无人值守部署吗？</span>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-answer-8">
                 <span data-lang="en">Yes. For silent deployment via SCCM, MDT, or Group Policy, you can use the DISM command: <code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:C:\path\to\sxs</code>. Our installer provides an alternative GUI method — just run as administrator with no command line needed.</span>
                 <span data-lang="zh">可以。通过 SCCM、MDT 或组策略无人值守部署时，可使用 DISM 命令：<code>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:C:\path\to\sxs</code>。我们的安装程序提供了替代 GUI 方式，只需以管理员身份运行，无需命令。</span>
             </div>
